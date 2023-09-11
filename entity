@@ -1,0 +1,37 @@
+@Entity
+public class Resume {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    private String phone;
+
+    // Getters and setters
+}
+
+@Entity
+public class Education {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String degree;
+    private String university;
+    private String graduationYear;
+
+    // Getters and setters
+}
+
+@Entity
+public class WorkExperience {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String jobTitle;
+    private String company;
+    private String startYear;
+    private String endYear;
+    private String jobDescription;
+
+    // Getters and setters
+}
